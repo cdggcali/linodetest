@@ -1,9 +1,5 @@
 - hosts: all
-  collections:
-    - community.general
-  #roles:
-  #  - geerlingguy.ntp
   tasks:
     - name: Set timezone.
-      community.general.timezone:
+      timezone:
         name: "America/Chicago" 
